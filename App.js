@@ -1,7 +1,7 @@
 
 import { StatusBar } from 'expo-status-bar';
 import { Text, View, SafeAreaView } from 'react-native';
-
+import "expo-dev-client"
 export default function App() {
   return (
 
