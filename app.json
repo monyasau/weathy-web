@@ -4,7 +4,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.monyasau.Weathy"
     },
     "name": "Weathy",
     "slug": "Weathy",
@@ -22,10 +23,14 @@
     ],
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "50a47455-dc9a-4e9c-bf70-6f0b15605a41"
+      }
     }
   },
-  
   "react-native-google-mobile-ads": {
-    "android_app_id": "ca-app-pub-2165582252373154~9115633534"
+    "android_app_id": "ca-app-pub-2165582252373154~1562613003"
   }
 }
