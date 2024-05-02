@@ -9,12 +9,13 @@ import {
   RewardedAd
 } from "react-native-google-mobile-ads";
 import TopNav from "./components/TopNav";
+import RewardedAdComponent from "./components/RewardedAdComponent";
 
 export default function App() {
-  const BannerAdUnitId = "ca-app-pub-2165582252373154/5631183082";
+  const BannerAdUnitId =  __DEV__ ? TestIds.BANNER :  "ca-app-pub-2165582252373154/5631183082";
   const RewardedAdUnitId = __DEV__ ? TestIds.REWARDED : 'ca-app-pub-2165582252373154/4559496768';
-
-  return (
+ 
+return (
     <>
       <View className="flex-1 items-center justify-center pt-8 bg-white">
         <StatusBar style="auto" />
@@ -29,6 +30,7 @@ export default function App() {
           requestNonPersonalizedAdsOnly: false,
         }}
       />
+      <RewardedAdComponent adUnitId={RewardedAdUnitId}/>
     </>
   );
 }
